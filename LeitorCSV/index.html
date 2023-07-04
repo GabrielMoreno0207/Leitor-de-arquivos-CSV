@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leitor de Arquivo CSV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-4">Leitor de Arquivo CSV 📁📰</h1>
+    <input type="file" id="csvFileInput" accept=".csv" class="form-control mb-3">
+    <input type="text" id="searchInput" placeholder="Pesquisar..." class="form-control mb-3">
+    <div class="table-responsive">
+      <table id="csvTable" class="table table-bordered table-striped">
+        <thead>
+          <tr id="tableHeader"></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer mt-auto py-3 bg-light text-center">
+    <div class="container">
+      Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-morenodev/" target="_blank">Gabriel Moreno</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
